@@ -19,12 +19,12 @@ public class MultiCatchExample {
             }
 
         } catch (NullPointerException | ArrayIndexOutOfBoundsException myExceptParamName) {
-            // catch has parm reference name ONLY ONCE AND AT THE END
+            // Use only the single-pipe operator
+            // Catch has parm reference name ONLY ONCE AND AT THE END
 
-            System.out.println("One of those two types of exceptions was thrown");
+            System.out.println("\n\nOne of those two types of exceptions was thrown");
             System.out.println("Number = " + myNumber);
-            System.out.println("Message = " + myExceptParamName.getMessage());
-            System.out.println("Message = " + myExceptParamName.getMessage());
+            System.out.println("Message = " + myExceptParamName.getMessage()+ "\n\n");
         }
     }
 }
